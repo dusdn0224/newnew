@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.get_med),
-    path('check/', views.check)
+    path('<int:num>/', views.check),
+    path('max/', views.max)
 ]
